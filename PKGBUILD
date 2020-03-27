@@ -1,6 +1,6 @@
 # Maintainer: Codist <countstarlight@gmail.com>
 # Maintainer: laomocode <3344907598@qq.com>
-pkgname=deepin-wine-wechat
+pkgname=deepin.com.wechat
 pkgver=2.6.8.65
 _deepinwechatver=2.6.8.65deepin0
 pkgrel=2
@@ -9,7 +9,7 @@ arch=("x86_64")
 url="https://weixin.qq.com/"
 license=('custom')
 depends=('p7zip' 'deepin-wine' 'xorg-xwininfo' 'wqy-microhei' 'lib32-alsa-lib' 'lib32-alsa-plugins' 'lib32-libpulse' 'lib32-openal' 'lib32-mpg123' 'lib32-libldap')
-conflicts=('deepin-wechat')
+conflicts=('deepin-wechat' 'deepin-wine-wechat')
 install="deepin-wine-wechat.install"
 _mirror="https://mirrors.aliyun.com/deepin"
 source=("$_mirror/pool/non-free/d/deepin.com.wechat/deepin.com.wechat_${_deepinwechatver}_i386.deb"
