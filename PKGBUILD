@@ -3,7 +3,7 @@
 pkgname=deepin.com.wechat
 pkgver=2.6.8.65
 _deepinwechatver=2.6.8.65deepin0
-pkgrel=2
+pkgrel=3
 pkgdesc="Tencent WeChat (com.wechat) on Deepin Wine For Archlinux"
 arch=("x86_64")
 url="https://weixin.qq.com/"
@@ -31,7 +31,7 @@ build() {
   msg "Creating font file link ..."
   ln -sf "/usr/share/fonts/wenquanyi/wqy-microhei/wqy-microhei.ttc" "${srcdir}/deepinwechatdir/drive_c/windows/Fonts/wqy-microhei.ttc"
   msg "Repackaging app archive ..."
-  7z a -t7z -r "${srcdir}/files.7z" "${srcdir}/deepinwechatdir/*"
+  7z a -t7z -r "${srcdir}/dpkgdir/files.7z" "${srcdir}/deepinwechatdir/*"
 }
 
 package() {
